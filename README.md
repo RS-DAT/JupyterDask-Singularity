@@ -22,3 +22,9 @@ On the SLURM system (Spider), add workers to the Dask cluster using:
 # get the scheduler address from the Jupyter session
 sbatch dask-worker.slurm ./test-jupyterdask-image.sif tcp://10.0.0.XX:XXXXX 
 ```
+
+## Resources
+
+* https://github.com/pbranson/pangeo-hpc-singularity/tree/master
+* https://gist.github.com/willirath/2176a9fa792577b269cb393995f43dda
+* https://github.com/ESM-VFC/esm-vfc-stacks/tree/master
