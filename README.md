@@ -29,7 +29,7 @@ sbatch dask-worker.slurm ./test-jupyterdask-image.sif tcp://10.0.0.XX:XXXXX
 We have built an example singularity container hosted on GitHub Packages in this [repository](https://github.com/fnattino/test-jupyterdask-image-apptainer). The advantage of using native singularity files is that we can skip the conversion to SIF format.
 
 Starting JupyterLab in a container on a compute node:
-```
+```shell
 sbatch jupyter.slurm oras://ghcr.io/fnattino/test-jupyterdask-image-apptainer:latest
 ```
 
