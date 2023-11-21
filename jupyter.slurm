@@ -13,6 +13,6 @@ NODE=`hostname -s`
 echo "Run the following on your local machine: "
 echo "ssh -i /path/to/the/ssh/key -N -L 8889:${NODE}:${PORT} ${USER}@spider.surf.nl"
 
-apptainer -d exec \
+apptainer exec \
 	$CONTAINER \
 	jupyter lab --no-browser --port=${PORT} --ip=0.0.0.0
